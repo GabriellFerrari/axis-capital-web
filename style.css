@@ -136,7 +136,7 @@ button:hover {
 
     @media screen and (max-width: 768px) {
       .Principal {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
       }
 
@@ -179,5 +179,8 @@ button:hover {
 
     p {
       font-size: 0.7em;
+    }
+    button{
+      width: 290px;
     }
     }
