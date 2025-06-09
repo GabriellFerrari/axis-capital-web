@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Banco do Brasil - Investimentos</title>
+  <title>AxisCapital</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="imagem/ChatGPT Image 9 de jun. de 2025, 01_58_26.png" type="image/x-icon">
   <style>
     .hero {
       background-image: url('https://www.bb.com.br/docs/pub/siteEsp/dwn/img-home-investimentos.jpg');
@@ -41,16 +42,25 @@
     .card-invest:hover {
       transform: translateY(-5px);
       box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      .card-title{
+        color: darkgoldenrod;
+      }
+      .card-body-invest .btn{
+        background-color: darkgoldenrod;
+      }
     }
     .card-invest img {
-      width: 80%;
+      width: 75%;
       height: 180px;
       object-fit: cover;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
+      padding: 5px;
     
     }
+
+    
     .card-body-invest {
       background-color: #ffffff;
       padding: 15px;
@@ -59,8 +69,10 @@
       
     }
     .card-title {
-      font-size: 1.1rem;
+      font-size: 1.5rem;
       font-weight: 600;
+      padding-bottom: 5px;
+      font-weight: bold;
     }
     .card-text {
       font-size: 0.95rem;
@@ -69,13 +81,24 @@
     .col-md-4 {
   max-width: 300px; /* valor menor que o padrão */
 }
+
+h2{
+  font-weight: bold;
+  font-size: 2.5em;
+  color: #031227;
+  padding: 20px;
+}
+
+
+
+
   </style>
 </head>
 <body>
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
-    <a class="navbar-brand" href="#">Banco do Brasil</a>
+    <a class="navbar-brand" href="#">Axis Capital</a>
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="#">Para você</a></li>
@@ -93,23 +116,23 @@
   <!-- Investimentos -->
   <div class="container py-5">
     <h2 class="mb-4">Investimentos disponíveis para você</h2>
-    <div class="row g-4">
+    <div class="row g-4 justify-content-center">
       <!-- 9 Cards -->
       <!-- Os cards são repetidos aqui para exemplo -->
       <!-- Use back-end ou JS para preencher dinamicamente se necessário -->
       <!-- Copie e cole os blocos a seguir para aumentar a quantidade de cards -->
-      <div class="col-md-4">
+      <div class="col-6 col-md-6 col-lg-3">
         <div class="card-invest shadow">
           <img src="imagem/fundo de investimento.png" alt="Investimento">
           <div class="card-body-invest">
-            <h5 class="card-title">- Fundos de Investimento</h5>
+            <h5 class="card-title">Fundos de Investimento</h5>
             <p class="card-text">Permite investir com a gestão de especialistas, garantindo diversificação e administração profissional dos ativos</p>
             <a href="#" class="btn btn-primary mt-2">Saiba mais</a>
           </div>
         </div>
       </div>
       <!-- Repita o bloco acima quantas vezes quiser -->
-      <div class="col-md-4">
+      <div class="col-6 col-md-6 col-lg-3">
         <div class="card-invest shadow">
           <img src="imagem/cdb.png" alt="Investimento">
           <div class="card-body-invest">
@@ -119,9 +142,9 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-6 col-md-6 col-lg-3">
         <div class="card-invest shadow">
-          <img src="https://via.placeholder.com/400x180" alt="Investimento">
+          <img src="imagem/Nature on screen-rafiki.png" alt="Investimento">
           <div class="card-body-invest">
             <h5 class="card-title">LCA</h5>
             <p class="card-text">Investimento que promove e financia o agronegócio brasileiro, isento de imposto de renda para pessoa física.</p>
@@ -129,9 +152,9 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-6 col-md-6 col-lg-3">
         <div class="card-invest shadow">
-          <img src="https://via.placeholder.com/400x180" alt="Investimento">
+          <img src="imagem/Cash Payment-bro.png" alt="Investimento">
           <div class="card-body-invest">
             <h5 class="card-title">LCI</h5>
             <p class="card-text">Destinado ao setor imobiliário, também isento de imposto de renda, sendo uma opção vantajosa em renda fixa.</p>
@@ -139,9 +162,9 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-6 col-md-6 col-lg-3">
         <div class="card-invest shadow">
-          <img src="https://via.placeholder.com/400x180" alt="Investimento">
+          <img src="imagem/Coins-amico.png" alt="Investimento">
           <div class="card-body-invest">
             <h5 class="card-title">Ações</h5>
             <p class="card-text">Ao comprar ações, você se torna sócio de empresas e pode lucrar com dividendos e valorização dos papéis.
@@ -150,9 +173,9 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-6 col-md-6 col-lg-3">
         <div class="card-invest shadow">
-          <img src="https://via.placeholder.com/400x180" alt="Investimento">
+          <img src="imagem/House searching-amico.png" alt="Investimento">
           <div class="card-body-invest">
             <h5 class="card-title">Fundos Imobiliários</h5>
             <p class="card-text">Investimento em imóveis sem necessidade de compra direta, com rendimento baseado em alugueis e valorização dos ativos.</p>
@@ -160,9 +183,9 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-6 col-md-6 col-lg-3">
         <div class="card-invest shadow">
-          <img src="https://via.placeholder.com/400x180" alt="Investimento">
+          <img src="imagem/Piggy bank-pana (1).png" alt="Investimento">
           <div class="card-body-invest">
             <h5 class="card-title">ETFs</h5>
             <p class="card-text">Fundos que replicam índices de mercado, como o Ibovespa, oferecendo diversificação com baixo custo.</p>
@@ -170,9 +193,9 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-6 col-md-6 col-lg-3">
         <div class="card-invest shadow">
-          <img src="https://via.placeholder.com/400x180" alt="Investimento">
+          <img src="imagem/Treasure-rafiki.png" alt="Investimento">
           <div class="card-body-invest">
             <h5 class="card-title">Tesouro Direto</h5>
             <p class="card-text">Títulos públicos federais com baixo risco e liquidez diária, ideal para quem busca segurança e rentabilidade previsível.
@@ -181,15 +204,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card-invest shadow">
-          <img src="https://via.placeholder.com/400x180" alt="Investimento">
-          <div class="card-body-invest">
-            <h5 class="card-title">Previdência Privada</h5>
-            <p class="card-text">Planos de previdência do Banco do Brasil voltados para objetivos de médio e longo prazo, como aposentadoria.</p>
-            <a href="#" class="btn btn-primary mt-2">Saiba mais</a>
-          </div>
-        </div>
+      
       </div>
     </div>
   </div>
