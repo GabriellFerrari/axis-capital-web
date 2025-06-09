@@ -3,77 +3,197 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>InvestMais</title>
-  <link rel="stylesheet" href="style2.css">
+  <title>Banco do Brasil - Investimentos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero {
+      background-image: url('https://www.bb.com.br/docs/pub/siteEsp/dwn/img-home-investimentos.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .card-invest {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column-reverse;
+      height: auto;
+  
+    }
+    .card-body-invest .btn {
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 4px 12px;
+  background-color: #031227; /* Azul BB */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  float: right;
+  cursor: pointer;
+}
+    .card-invest:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+    .card-invest img {
+      width: 80%;
+      height: 180px;
+      object-fit: cover;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    
+    }
+    .card-body-invest {
+      background-color: #ffffff;
+      padding: 15px;
+      height: 150px;
+      width: 120;
+      
+    }
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    .card-text {
+      font-size: 0.95rem;
+      color: #333;
+    }
+    .col-md-4 {
+  max-width: 300px; /* valor menor que o padrão */
+}
+  </style>
 </head>
 <body>
-  <header>
-    <div class="carousel">
-      
-      <div class="carousel-overlay">
-        <h1>Invista com segurança no seu futuro</h1>
-        <p>Planos personalizados para todos os perfis</p>
-        <a href="#planos" class="btn">Conheça nossos planos</a>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
+    <a class="navbar-brand" href="#">Banco do Brasil</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Para você</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">O que você precisa</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Voltar ao login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero section -->
+  <div class="hero">
+    <h1 class="display-4">Invista com quem é especialista em você</h1>
+  </div>
+
+  <!-- Investimentos -->
+  <div class="container py-5">
+    <h2 class="mb-4">Investimentos disponíveis para você</h2>
+    <div class="row g-4">
+      <!-- 9 Cards -->
+      <!-- Os cards são repetidos aqui para exemplo -->
+      <!-- Use back-end ou JS para preencher dinamicamente se necessário -->
+      <!-- Copie e cole os blocos a seguir para aumentar a quantidade de cards -->
+      <div class="col-md-4">
+        <div class="card-invest shadow">
+          <img src="imagem/fundo de investimento.png" alt="Investimento">
+          <div class="card-body-invest">
+            <h5 class="card-title">- Fundos de Investimento</h5>
+            <p class="card-text">Permite investir com a gestão de especialistas, garantindo diversificação e administração profissional dos ativos</p>
+            <a href="#" class="btn btn-primary mt-2">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+      <!-- Repita o bloco acima quantas vezes quiser -->
+      <div class="col-md-4">
+        <div class="card-invest shadow">
+          <img src="imagem/cdb.png" alt="Investimento">
+          <div class="card-body-invest">
+            <h5 class="card-title">CDB</h5>
+            <p class="card-text">Renda fixa com opções pré e pós-fixadas, ideal para quem busca segurança e previsibilidade nos ganhos.</p>
+            <a href="#" class="btn btn-primary mt-2">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-invest shadow">
+          <img src="https://via.placeholder.com/400x180" alt="Investimento">
+          <div class="card-body-invest">
+            <h5 class="card-title">LCA</h5>
+            <p class="card-text">Investimento que promove e financia o agronegócio brasileiro, isento de imposto de renda para pessoa física.</p>
+            <a href="#" class="btn btn-primary mt-2">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-invest shadow">
+          <img src="https://via.placeholder.com/400x180" alt="Investimento">
+          <div class="card-body-invest">
+            <h5 class="card-title">LCI</h5>
+            <p class="card-text">Destinado ao setor imobiliário, também isento de imposto de renda, sendo uma opção vantajosa em renda fixa.</p>
+            <a href="#" class="btn btn-primary mt-2">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-invest shadow">
+          <img src="https://via.placeholder.com/400x180" alt="Investimento">
+          <div class="card-body-invest">
+            <h5 class="card-title">Ações</h5>
+            <p class="card-text">Ao comprar ações, você se torna sócio de empresas e pode lucrar com dividendos e valorização dos papéis.
+</p>
+<a href="#" class="btn btn-primary mt-2">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-invest shadow">
+          <img src="https://via.placeholder.com/400x180" alt="Investimento">
+          <div class="card-body-invest">
+            <h5 class="card-title">Fundos Imobiliários</h5>
+            <p class="card-text">Investimento em imóveis sem necessidade de compra direta, com rendimento baseado em alugueis e valorização dos ativos.</p>
+            <a href="#" class="btn btn-primary mt-2">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-invest shadow">
+          <img src="https://via.placeholder.com/400x180" alt="Investimento">
+          <div class="card-body-invest">
+            <h5 class="card-title">ETFs</h5>
+            <p class="card-text">Fundos que replicam índices de mercado, como o Ibovespa, oferecendo diversificação com baixo custo.</p>
+            <a href="#" class="btn btn-primary mt-2">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-invest shadow">
+          <img src="https://via.placeholder.com/400x180" alt="Investimento">
+          <div class="card-body-invest">
+            <h5 class="card-title">Tesouro Direto</h5>
+            <p class="card-text">Títulos públicos federais com baixo risco e liquidez diária, ideal para quem busca segurança e rentabilidade previsível.
+</p>
+<a href="#" class="btn btn-primary mt-2">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-invest shadow">
+          <img src="https://via.placeholder.com/400x180" alt="Investimento">
+          <div class="card-body-invest">
+            <h5 class="card-title">Previdência Privada</h5>
+            <p class="card-text">Planos de previdência do Banco do Brasil voltados para objetivos de médio e longo prazo, como aposentadoria.</p>
+            <a href="#" class="btn btn-primary mt-2">Saiba mais</a>
+          </div>
+        </div>
       </div>
     </div>
-  </header>
+  </div>
 
-  <section id="planos" class="planos">
-    <h2>Nossos Planos</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Plano Conservador</h3>
-        <p>Ideal para quem quer segurança e retorno estável.</p>
-        <a href="#">Saiba mais</a>
-      </div>
-      <div class="card">
-        <h3>Plano Moderado</h3>
-        <p>Equilíbrio entre risco e retorno</p>
-        <a href="#">Saiba mais</a>
-      </div>
-      <div class="card">
-        <h3>Plano Agressivo</h3>
-        <p>Mais risco, maior potencial de ganho.</p>
-        <a href="#">Saiba mais</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="como-funciona">
-    <h2>Como Funciona</h2>
-    <div class="steps">
-      <div class="step">
-        <h3>1</h3>
-        <p>Escolha seu perfil</p>
-      </div>
-      <div class="step">
-        <h3>2</h3>
-        <p>Simule o investimento</p>
-      </div>
-      <div class="step">
-        <h3>3</h3>
-        <p>Acompanhe seus ganhos</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="depoimentos">
-    <h2>Depoimentos</h2>
-    <blockquote>
-      <p>“Consegui organizar minha vida financeira com a InvestMais.”</p>
-      <cite>– Maria S.</cite>
-    </blockquote>
-  </section>
-
-  <script>
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.carousel img');
-
-    setInterval(() => {
-      slides[currentSlide].classList.remove('active');
-      currentSlide = (currentSlide + 1) % slides.length;
-      slides[currentSlide].classList.add('active');
-    }, 5000);
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
