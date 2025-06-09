@@ -156,12 +156,15 @@ button:hover {
       }
 
       .titulo .maior {
-      font-size: 2.0em;
+      font-size: 1.8em;
       font-weight: bold;
+    }
+    .logo{
+      width: 30px;
     }
 
     .titulo .menor {
-      font-size: 1.0em;
+      font-size: 0.8em;
       font-weight: normal;
     }
     }
