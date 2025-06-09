@@ -1,0 +1,167 @@
+body, html {
+        
+
+      
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .titulo {
+      color: white;
+      text-align: center;
+      margin: 20px 0 40px 0;
+    }
+
+    .titulo .maior {
+      font-size: 2.5em;
+      font-weight: bold;
+    }
+
+    .titulo .menor {
+      font-size: 1.5em;
+      font-weight: normal;
+    }
+
+    .Principal {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      align-items: center;
+      height: 100%;
+      flex-wrap: wrap;
+    }
+
+    .conteudo1 {
+      background-color: #031227;
+      width: 450px;
+      height: 300px;
+      border: 1px solid rgba(255, 255, 255, 0.11);
+      border-radius: 15px;
+      padding: 20px;
+      color: white;
+      box-shadow: 8px 11px 26px rgba(0, 0, 0, 0.671);
+    }
+
+    #formulario {
+      background-color: transparent;
+      width: 250px;
+      border: none;
+      height: 400px;
+      color: #031227;
+    }
+
+    input {
+      width: 230px;
+      padding: 5px;
+      background-color: rgba(49, 51, 50, 0.356);
+      border-radius: 5px;
+      color: #031227;
+      margin-top: 2px;
+      border: none;
+      outline: none;
+      height: 25px;
+    }
+
+    select {
+      height: 25px;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      background-color: rgba(49, 51, 50, 0.356);
+      color: white;
+      margin-top: 2px;
+      width: 240px;
+      padding: 12px 0px;
+      font-size: 14px;
+      height: auto;
+    }
+
+    h2{
+        color: #031227;
+        margin-top: 10px;
+        
+    }
+
+    select option {
+      color: black;
+      background-color: white;
+    }
+
+    h3 {
+      font-size: 1em;
+    }
+
+    p {
+      font-size: 0.8em;
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.2);
+      margin: 20px 0;
+    }
+
+    h3 i {
+      margin-right: 8px;
+      color:  rgb(255, 183, 0);;
+      font-size: 16px;
+      vertical-align: middle;
+    }
+    .titulo{color: rgb(255, 183, 0);}
+    button {
+    background-color: #031227; /* Dourado */
+    color: #ffffff; 
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 240px;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color:  rgb(255, 183, 0);;
+}
+
+.logo {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    
+}
+
+
+
+    @media screen and (max-width: 768px) {
+      .Principal {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .conteudo1 {
+        width: 70%;
+        height: auto;
+        margin-bottom: 20px;
+      }
+
+      #formulario {
+        width: 70%;
+        height: auto;
+      }
+
+      input, select {
+        width: 100%;
+      }
+
+      .titulo .maior {
+      font-size: 2.0em;
+      font-weight: bold;
+    }
+
+    .titulo .menor {
+      font-size: 1.0em;
+      font-weight: normal;
+    }
+    }
