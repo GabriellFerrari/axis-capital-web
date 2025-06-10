@@ -12,18 +12,53 @@
     body {
   font-family: 'Poppins', sans-serif;
 }
-
-    .hero {
-      background-image: url('https://www.bb.com.br/docs/pub/siteEsp/dwn/img-home-investimentos.jpg');
-      background-size: cover;
-      background-position: center;
-      color: white;
-      height: 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
+.logo {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    
+}
+.paihero{
+  margin: 0%;
+  padding: 0%;
+  background: url(imagem/imgfundo.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;height:1000px;
+  
+  
+}
+    .hero h1{
+      font-weight: bold;
+      color: rgb(243, 174, 0);
+      font-size: 4.5em;
+      text-shadow: -1px 3px 0px #03122770;
+      
     }
+    .hero p {
+      color: #031227;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+    .hero {
+  
+  background-size: cover;
+  background-position: center;
+  color: #031227;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinha horizontalmente à esquerda */
+  text-align: left;
+  padding-top: 400px;
+  padding-left: 270px;
+  max-width: 500px;
+  
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column; /* Coloca h1 e p um embaixo do outro */
+  align-items: flex-start; /* Alinha à esquerda */
+}
     .card-invest {
       position: relative;
       overflow: hidden;
@@ -150,6 +185,12 @@ h2{
   border-radius: 50%;
   object-fit: cover;
 }
+.logo-bar {
+  border-left: 1px solid #ccc;
+  height: 25px;
+  margin: 0 10px;
+}
+
 
 @media (max-width: 768px) {
   
@@ -220,6 +261,20 @@ h2{
     font-size: 15px;
     margin-top: 10px;
   }
+    .hero h1{
+      font-size: 1.2em;
+      
+    }
+    .hero p{
+      font-size: 0.8em;
+
+    }
+    .hero{
+      padding-left: 10px;
+      padding-top: 0px;
+      width: 60%;
+    }
+    
 
   
 }
@@ -233,19 +288,33 @@ h2{
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
-    <a class="navbar-brand" href="#">Axis Capital</a>
+    <img src="imagem/ChatGPT Image 9 de jun. de 2025, 01_58_26.png" alt="Axis Capital"  class="logo">
+    <div class="logo-bar"></div>
+    <span class="fw-bold" >AxisCapital</span>
     <div class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#">Para você</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">O que você precisa</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Voltar ao login</a></li>
-      </ul>
-    </div>
-  </nav>
+    <ul class="navbar-nav ms-auto align-items-center">
+      <li class="nav-item"><a class="nav-link" href="#">Para você</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">O que você precisa</a></li>
+      <li class="nav-item" id="voltarlogin">
+        <a class="btn btn-primary ms-2" href="index.html">Voltar ao login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
   <!-- Hero section -->
-  <div class="hero">
-    <h1 class="display-4">Invista com quem é especialista em você</h1>
+  <div class="paihero">
+    <div class="hero">
+    <div class="hero-content">
+    
+      <h1 class="display-4">Axis Capital Investimentos</h1>
+      <p>
+        Carteira Coletiva, CDB, LCA, LCI, Ações, Fundos Imobiliários, ETFs e Tesouro Direto? Na Axis Capital, você investe do seu jeito e conta com a assessoria dos nossos especialistas em todos os momentos, com sugestões personalizadas de acordo com o seu perfil e objetivos.
+        <br><br>
+        Baixando o app da Axis Capital, você investe com autonomia, sem sair de casa, e ainda conta com o suporte da nossa assessoria digital especializada!
+      </p>
+    </div>
+    </div>
   </div>
 
   <!-- Investimentos -->
@@ -260,7 +329,7 @@ h2{
         <div class="card-invest shadow">
           <img src="imagem/fundo de investimento.png" alt="Investimento">
           <div class="card-body-invest">
-            <h5 class="card-title">Fundos de Investimento</h5>
+            <h5 class="card-title">Carteira Coletiva</h5>
             <p class="card-text">Permite investir com a gestão de especialistas, garantindo diversificação e administração profissional dos ativos</p>
             <a href="#" class="btn btn-primary mt-2">Saiba mais</a>
           </div>
@@ -312,7 +381,7 @@ h2{
         <div class="card-invest shadow">
           <img src="imagem/House searching-amico.png" alt="Investimento">
           <div class="card-body-invest">
-            <h5 class="card-title">Fundos Imobiliários</h5>
+            <h5 class="card-title">Imobiliários</h5>
             <p class="card-text">Investimento em imóveis sem necessidade de compra direta, com rendimento baseado em alugueis e valorização dos ativos.</p>
             <a href="#" class="btn btn-primary mt-2">Saiba mais</a>
           </div>
@@ -357,6 +426,8 @@ h2{
     <img src="imagem/Imagem do WhatsApp de 2025-06-09 à(s) 23.00.34_121e4a7c.jpg" alt="Homem com celular" />
   </div>
 </div>
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
