@@ -197,6 +197,82 @@ h2{
   height: 25px;
   margin: 0 10px;
 }
+.app-section {
+    background: linear-gradient(90deg, #031227, #0055cc);
+    color: white;
+    text-align: center;
+    padding: 50px 10px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.app-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.app-section p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: auto;
+}
+
+.app-button {
+    background-color: rgb(230, 166, 5);
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+/* Footer geral */
+footer {
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Parte transparente do footer */
+.footer-transparent {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 25px 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.info-access img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Parte amarela do footer */
+.footer-yellow {
+    background-color: rgb(255, 184, 4);
+    padding: 15px 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
 
 
 @media (max-width: 768px) {
@@ -268,6 +344,8 @@ h2{
     font-size: 15px;
     margin-top: 10px;
   }
+
+  
     
 }
 
@@ -316,6 +394,24 @@ h2{
   #h2{
     font-size: 1.3em;
   }
+  .app-section {
+        padding: 30px;
+    }
+
+    .footer-transparent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info p {
+        text-align: center;
+    }
+
+    .footer-links a {
+        display: block;
+        margin: 5px 0;
+    }
+
 
   
   
@@ -354,19 +450,47 @@ h2{
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
-    <img src="imagem/ChatGPT Image 9 de jun. de 2025, 01_58_26.png" alt="Axis Capital"  class="logo">
+    <img src="imagem/ChatGPT Image 9 de jun. de 2025, 01_58_26.png" alt="Axis Capital" class="logo">
     <div class="logo-bar"></div>
-    <span class="fw-bold" >AxisCapital</span>
+    <span class="fw-bold">AxisCapital</span>
     <div class="collapse navbar-collapse">
-    <ul class="navbar-nav ms-auto align-items-center">
-      <li class="nav-item"><a class="nav-link" href="#">Para você</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">O que você precisa</a></li>
-      <li class="nav-item" id="voltarlogin">
-        <a class="btn btn-primary ms-2" href="index.html">Voltar ao login</a>
-      </li>
+        <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Para você
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Início</a></li>
+                    <li><a class="dropdown-item" href="#">Contas</a></li>
+                    <li><a class="dropdown-item" href="#">Cartões</a></li>
+                    <li><a class="dropdown-item" href="#">Empréstimo</a></li>
+                    <li><a class="dropdown-item" href="#">Minhas Finanças</a></li>
+                    <li><a class="dropdown-item" href="#">Shopping Axis</a></li>
+                    <li><a class="dropdown-item" href="#">Financiamento</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="dropdownNeeds" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        O que você precisa
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="dropdownNeeds">
+        <li><a class="dropdown-item" href="#">Assistente Financeiro Personalizado</a></li>
+        <li><a class="dropdown-item" href="#">Simulador de Crédito</a></li>
+        <li><a class="dropdown-item" href="#">Ofertas e Benefícios</a></li>
+        <li><a class="dropdown-item" href="#">Central de Atendimento</a></li>
+        <li><a class="dropdown-item" href="#">Área de Educação Financeira</a></li>
+        <li><a class="dropdown-item" href="#">Ferramentas Interativas</a></li>
+        <li><a class="dropdown-item" href="#">Serviços Personalizados</a></li>
     </ul>
-  </div>
+</li>
+
+            <li class="nav-item" id="voltarlogin">
+                <a class="btn btn-primary ms-2" href="index.html">Voltar ao login</a>
+            </li>
+        </ul>
+    </div>
 </nav>
+
 
   <!-- Hero section -->
   <div class="paihero">
@@ -491,6 +615,39 @@ h2{
     <img src="imagem/Imagem do WhatsApp de 2025-06-09 à(s) 23.00.34_121e4a7c.jpg" alt="Homem com celular" />
   </div>
 </div>
+
+<section class="app-section">
+        <h1>Todas suas aplicações em um só lugar!</h1>
+        <p>O App Axis Investimentos é a solução completa para gerenciar seus investimentos de forma fácil e segura. Com ele, você acessa todas as suas aplicações em um só lugar com agilidade.</p>
+        <button class="app-button">Baixar APP</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-transparent">
+            <div class="contact-info">
+                <p><strong>Central de Atendimento</strong><br>4004-1234 / 0800-567-890</p>
+                <p><strong>WhatsApp</strong><br>+55 17 98106-7579</p>
+                <p><strong>SAC</strong><br>0800-765-4321</p>
+                <p><strong>Ouvidoria</strong><br>0800-111-2222</p>
+            </div>
+            <div class="info-access">
+                <img style="width: 200px; height: auto;" src="imagem/img footer.png" alt="Acesso à Informação">
+            </div>
+        </div>
+        <div class="footer-yellow">
+            <p>© Appaxis Investimentos - CNPJ 99.999.999/0001-99 | São Paulo - SP | Brasil</p>
+            <div class="footer-links">
+                <a href="#">Mapa do site</a>
+                <a href="#">Segurança</a>
+                <a href="#">Ética e Integridade</a>
+                <a href="#">Privacidade</a>
+                <a href="#">Transparência</a>
+            </div>
+        </div>
+    </footer>
+
+
 
 
 
