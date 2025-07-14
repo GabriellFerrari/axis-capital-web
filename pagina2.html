@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fundos de Investimento</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    a{
+        text-decoration: none;
+        
+    }
+
+    body {
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px;
+      min-height: 100vh;
+    }
+
+    .conteudo-esquerda {
+      max-width: 50%;
+    }
+
+    .voltar {
+      color: rgb(255, 255, 255);
+      font-size: 30px;
+      margin-bottom: 20px;
+      display: inline-block;
+      font-weight: bold;
+      background-color: rgb(250, 183, 13);
+      padding: 10px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .voltar:hover{
+transform: scale(1.05);
+    }
+
+    .titulo {
+      color: rgb(255, 183, 0);
+      font-size: 42px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .subtitulo {
+      font-size: 16px;
+      margin-bottom: 40px;
+      line-height: 1.5;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background-color: rgb(241, 235, 235);
+      color: #031227;
+      border-radius: 8px;
+      padding: 40px;
+      font-weight: bold;
+      text-align: center;
+          box-shadow: 8px 14px 22px #0312275d;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          
+    }
+    .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+  background-color: rgb(255, 186, 13);
+}
+
+    .imagem-direita {
+      position: relative;
+    }
+
+    .imagem-direita img {
+      max-width: 600px;
+    }
+
+    .fundo-amarelo {
+      position: absolute;
+      bottom: 0;
+      left: -80px;
+      width: 100%;
+      height: 400px;
+      background-color: rgb(255, 184, 4);
+      z-index: -1;
+      transform: rotate(45deg);
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .conteudo-esquerda {
+        max-width: 100%;
+        margin-bottom: 30px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .imagem-direita img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="conteudo-esquerda">
+    <a href="pagina1.html" class="voltar">&larr; início</a>
+    <h1 class="titulo">Carteira Coletiva</h1>
+    <p class="subtitulo">
+      A carteira coletiva é um tipo de fundo de investimento onde os recursos de diversos investidores são reunidos e geridos por profissionais especializados. Essa modalidade garante maior diversificação, diluição de riscos e decisões baseadas em análises de mercado. Ideal para quem busca praticidade e segurança ao deixar a gestão do dinheiro nas mãos de especialistas.
+    </p>
+    <div class="cards">
+      <div class="card">+100<br>Fundos<br>disponíveis</div>
+      <div class="card">9<br>Classes de<br>estratégias</div>
+      <div class="card">Aplicações a<br>partir de R$ 0,01</div>
+      <div class="card">Resgate a<br>partir de D+0</div>
+    </div>
+  </div>
+  <div class="imagem-direita">
+    
+    <img src="imagem/fundo de investimento.png" alt="Pessoa usando celular" />
+  </div>
+  
+
+  
+</body>
+</html>
